@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Placement Topic Importance — Cheat Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --paper:#f8fbff; --card:#ffffff;
+    --green:#16a34a; --orange:#f59e0b; --gray:#6b7280;
+    --muted:#475569; --accent:#0369a1; --border:#e6eef8;
+  }
+  *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+  body{margin:0;background:var(--paper);padding:22px;color:#0f1724;}
+  .container{max-width:900px;margin:0 auto;background:var(--card);padding:22px;border-radius:10px;border:1px solid var(--border);box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+  header{display:flex;align-items:center;gap:14px}
+  .logo{width:60px;height:60px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+  h1{margin:0;font-size:20px}
+  p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
+  .key{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;font-weight:700;font-size:13px}
+  .b-green{background:#ecfdf5;color:var(--green);border:1px solid rgba(16,185,129,0.12)}
+  .b-orange{background:#fff7ed;color:var(--orange);border:1px solid rgba(245,158,11,0.12)}
+  .b-gray{background:#f8fafc;color:var(--gray);border:1px solid rgba(107,114,128,0.08)}
+  .summary{margin-top:18px;border-radius:8px;padding:14px;border:1px solid var(--border);background:#fff}
+  .summary-grid{display:flex;gap:12px;flex-wrap:wrap}
+  .summary-col{flex:1;min-width:220px}
+  .summary-col h3{margin:0;font-size:14px;color:var(--accent)}
+  .summary-list{margin:8px 0 0;padding-left:14px;color:var(--muted);font-size:13px}
+  .sections{margin-top:18px;display:grid;gap:14px}
+  section.card{background:#fff;padding:12px;border-radius:8px;border:1px solid var(--border)}
+  section.card h2{margin:0 0 8px;font-size:16px;color:var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{background:#f1f9ff;color:var(--accent);font-weight:700;padding:10px;border:1px solid var(--border);text-align:left}
+  td, th{padding:10px;border:1px solid var(--border);vertical-align:top}
+  td.topic{width:42%}
+  td.tag{width:14%;font-weight:700}
+  td.notes{width:44%;color:var(--muted)}
+  .must-focus{margin-top:12px}
+  .must-focus table td{padding:8px}
+  footer{margin-top:18px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  .print-hint{font-style:italic}
+  @media print{
+    body{padding:8mm;background:white}
+    .container{box-shadow:none;border:none}
+    .badge{box-shadow:none}
+  }
+  /* small helpers */
+  .icon{font-weight:800}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MJ</div>
+      <div>
+        <h1>Placement Topic Importance — Quick Cheat Sheet</h1>
+        <p class="lead">High-priority placement topics and topic-level importance. Use this for daily focused prep.</p>
+        <div class="key" aria-hidden="true">
+          <div class="badge b-green">✅ Very Important</div>
+          <div class="badge b-orange">🟡 Moderate</div>
+          <div class="badge b-gray">❌ Less Important</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top summary -->
+    <div class="summary" role="region" aria-label="Top Summary">
+      <div class="summary-grid">
+        <div class="summary-col">
+          <h3>Top Priorities (Must do)</h3>
+          <ul class="summary-list">
+            <li>Arithmetic Aptitude (Percentages, TSD, Time & Work)</li>
+            <li>Logical Reasoning (Puzzles, Seating, Coding-Decoding)</li>
+            <li>Data Interpretation (Tables, Mixed Graphs, Pie/Bar)</li>
+            <li>Verbal Ability (RC, Cloze, Sentence Correction)</li>
+          </ul>
+        </div>
+        <div class="summary-col">
+          <h3>Do If Time Allows</h3>
+          <ul class="summary-list">
+            <li>Verbal Reasoning (Assumptions, Arguments)</li>
+            <li>Non-Verbal Reasoning (Figure series, Cubes/Dice)</li>
+            <li>Advanced Quant topics (Trigonometry, Logarithms) — low ROI</li>
+          </ul>
+        </div>
+        <div class="summary-col">
+          <h3>Quick Notes</h3>
+          <ul class="summary-list">
+            <li>Focus on high-frequency question types — learn templates & tricks.</li>
+            <li>Practice DI sets under time pressure — high scoring area.</li>
+            <li>Use mock tests to combine DSA + aptitude scheduling for placement days.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed sections -->
+    <div class="sections">
+
+      <!-- 1 Arithmetic Aptitude -->
+      <section class="card" id="arithmetic">
+        <h2>1. Arithmetic Aptitude (Quantitative Aptitude)</h2>
+        <table>
+          <thead>
+            <tr><th>Topic</th><th>Importance</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="topic">Number System</td><td class="tag">✅</td><td class="notes">Basic building block; fast mental math helps.</td></tr>
+            <tr><td class="topic">LCM &amp; HCF</td><td class="tag">🟡</td><td class="notes">Occasional, useful for fractions & time problems.</td></tr>
+            <tr><td class="topic">Simplification</td><td class="tag">✅</td><td class="notes">Speed tricks & BODMAS shortcuts save time.</td></tr>
+            <tr><td class="topic">Square &amp; Cube Roots</td><td class="tag">🟡</td><td class="notes">Memorize squares up to 30; helpful in some tests.</td></tr>
+            <tr><td class="topic">Surds &amp; Indices</td><td class="tag">❌</td><td class="notes">Rare in most placement tests — low ROI.</td></tr>
+            <tr><td class="topic">Percentage</td><td class="tag">✅</td><td class="notes">Core — profit/loss, discount, growth rates.</td></tr>
+            <tr><td class="topic">Profit &amp; Loss</td><td class="tag">✅</td><td class="notes">Standard questions; learn formula-based shortcuts.</td></tr>
+            <tr><td class="topic">Simple &amp; Compound Interest</td><td class="tag">✅</td><td class="notes">Practice compounding tricks (approx methods).</td></tr>
+            <tr><td class="topic">Ratio &amp; Proportion</td><td class="tag">✅</td><td class="notes">Often appears with mixtures & sharing problems.</td></tr>
+            <tr><td class="topic">Time, Speed &amp; Distance</td><td class="tag">✅</td><td class="notes">High frequency — trains, relative speed, circular motion.</td></tr>
+            <tr><td class="topic">Time &amp; Work</td><td class="tag">✅</td><td class="notes">Pipes & cisterns, efficiency problems included.</td></tr>
+            <tr><td class="topic">Averages</td><td class="tag">✅</td><td class="notes">Easy concept, commonly asked.</td></tr>
+            <tr><td class="topic">Problems on Ages</td><td class="tag">🟡</td><td class="notes">Algebraic setup practice needed.</td></tr>
+            <tr><td class="topic">Pipes &amp; Cisterns</td><td class="tag">🟡</td><td class="notes">Variant of time & work.</td></tr>
+            <tr><td class="topic">Boats &amp; Streams</td><td class="tag">🟡</td><td class="notes">Relative speed variants.</td></tr>
+            <tr><td class="topic">Mixtures &amp; Alligation</td><td class="tag">🟡</td><td class="notes">Useful for ratio problems.</td></tr>
+            <tr><td class="topic">Partnership</td><td class="tag">🟡</td><td class="notes">Basic ratio application.</td></tr>
+            <tr><td class="topic">Permutations &amp; Combinations</td><td class="tag">🟡</td><td class="notes">Basic nCr / nPr — moderate importance.</td></tr>
+            <tr><td class="topic">Probability</td><td class="tag">🟡</td><td class="notes">Important for some companies; practice basics.</td></tr>
+            <tr><td class="topic">Algebra (Linear &amp; Quadratic Equations)</td><td class="tag">✅</td><td class="notes">Essential for many aptitude questions.</td></tr>
+            <tr><td class="topic">Mensuration (2D &amp; 3D Geometry)</td><td class="tag">🟡</td><td class="notes">Practice common area/volume formulas.</td></tr>
+            <tr><td class="topic">Trigonometry</td><td class="tag">❌</td><td class="notes">Rare in placement tests — low ROI.</td></tr>
+            <tr><td class="topic">Logarithms</td><td class="tag">❌</td><td class="notes">Usually not required.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 2 Data Interpretation -->
+      <section class="card" id="di">
+        <h2>2. Data Interpretation (DI)</h2>
+        <table>
+          <thead>
+            <tr><th>Topic</th><th>Importance</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="topic">Bar Graphs</td><td class="tag">✅</td><td class="notes">Standard; quick reading & calculation practice is key.</td></tr>
+            <tr><td class="topic">Line Graphs</td><td class="tag">✅</td><td class="notes">Time-series interpretation.</td></tr>
+            <tr><td class="topic">Pie Charts</td><td class="tag">✅</td><td class="notes">Ratios & percent-based DI.</td></tr>
+            <tr><td class="topic">Tables</td><td class="tag">✅</td><td class="notes">High scoring; practice scanning & calculation speed.</td></tr>
+            <tr><td class="topic">Caselet DI</td><td class="tag">🟡</td><td class="notes">Small paragraph + data; needs reading accuracy.</td></tr>
+            <tr><td class="topic">Data Sufficiency (Quant-Based)</td><td class="tag">✅</td><td class="notes">Often asked — judge required info efficiency.</td></tr>
+            <tr><td class="topic">Missing Data Interpretation</td><td class="tag">🟡</td><td class="notes">Requires set-up to deduce missing values.</td></tr>
+            <tr><td class="topic">Mixed Graphs (Combo of charts)</td><td class="tag">✅</td><td class="notes">Combined skill of reading multiple charts.</td></tr>
+            <tr><td class="topic">DI Involving Percentages/Ratios</td><td class="tag">✅</td><td class="notes">Common variant — practice percentage conversions.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 3 Verbal Ability -->
+      <section class="card" id="verbal">
+        <h2>3. Verbal Ability (English)</h2>
+        <table>
+          <thead>
+            <tr><th>Topic</th><th>Importance</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="topic">Reading Comprehension</td><td class="tag">✅</td><td class="notes">High weightage; practice speed & inference.</td></tr>
+            <tr><td class="topic">Error Spotting (Grammar)</td><td class="tag">✅</td><td class="notes">Learn common grammar rules & practice fast.</td></tr>
+            <tr><td class="topic">Sentence Completion / Fill in the Blanks</td><td class="tag">✅</td><td class="notes">Context-based vocabulary & grammar.</td></tr>
+            <tr><td class="topic">Synonyms &amp; Antonyms</td><td class="tag">🟡</td><td class="notes">Useful for quick vocab checks.</td></tr>
+            <tr><td class="topic">Vocabulary (One Word Substitution, Idioms)</td><td class="tag">🟡</td><td class="notes">Daily 5 words practice helps.</td></tr>
+            <tr><td class="topic">Para Jumbles (Sentence Rearrangement)</td><td class="tag">✅</td><td class="notes">Practice flow & connectors.</td></tr>
+            <tr><td class="topic">Cloze Test</td><td class="tag">✅</td><td class="notes">Context & vocabulary based.</td></tr>
+            <tr><td class="topic">Sentence Correction</td><td class="tag">✅</td><td class="notes">Grammar rules & common errors.</td></tr>
+            <tr><td class="topic">Spelling Errors</td><td class="tag">🟡</td><td class="notes">Good to know but not a major focus.</td></tr>
+            <tr><td class="topic">Active-Passive Voice</td><td class="tag">❌</td><td class="notes">Rare as standalone — low ROI.</td></tr>
+            <tr><td class="topic">Direct-Indirect Speech</td><td class="tag">❌</td><td class="notes">Low frequency in placement tests.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 4 Logical Reasoning -->
+      <section class="card" id="logical">
+        <h2>4. Logical Reasoning</h2>
+        <table>
+          <thead><tr><th>Topic</th><th>Importance</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td class="topic">Seating Arrangement (Linear, Circular)</td><td class="tag">✅</td><td class="notes">High frequency — practice templates & variants.</td></tr>
+            <tr><td class="topic">Puzzles (Floor, Age, Box)</td><td class="tag">✅</td><td class="notes">Core— practice many puzzles with constraints.</td></tr>
+            <tr><td class="topic">Blood Relations</td><td class="tag">✅</td><td class="notes">Simple patterns; solve quickly by mapping.</td></tr>
+            <tr><td class="topic">Direction Sense</td><td class="tag">✅</td><td class="notes">Practice left-right mapping & turns.</td></tr>
+            <tr><td class="topic">Coding-Decoding</td><td class="tag">✅</td><td class="notes">Pattern recognition; create rules fast.</td></tr>
+            <tr><td class="topic">Ranking and Order</td><td class="tag">✅</td><td class="notes">Common in many papers.</td></tr>
+            <tr><td class="topic">Syllogisms</td><td class="tag">🟡</td><td class="notes">Venn diagrams help — moderate frequency.</td></tr>
+            <tr><td class="topic">Data Sufficiency (Logical)</td><td class="tag">🟡</td><td class="notes">Evaluate statement sufficiency quickly.</td></tr>
+            <tr><td class="topic">Input-Output (Pattern-Based)</td><td class="tag">🟡</td><td class="notes">Practice transformation rules.</td></tr>
+            <tr><td class="topic">Venn Diagrams</td><td class="tag">✅</td><td class="notes">Useful for many reasoning questions.</td></tr>
+            <tr><td class="topic">Binary Logic (Truth-Tellers &amp; Liars)</td><td class="tag">🟡</td><td class="notes">Occasional but useful to practice.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 5 Verbal Reasoning -->
+      <section class="card" id="verbalreason">
+        <h2>5. Verbal Reasoning (Logical English Deduction)</h2>
+        <table>
+          <thead><tr><th>Topic</th><th>Importance</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td class="topic">Statement &amp; Conclusion</td><td class="tag">✅</td><td class="notes">Practice formal logic conclusions.</td></tr>
+            <tr><td class="topic">Statement &amp; Assumptions</td><td class="tag">✅</td><td class="notes">Focus on implicit vs explicit assumptions.</td></tr>
+            <tr><td class="topic">Statement &amp; Arguments</td><td class="tag">✅</td><td class="notes">Argument strength identification.</td></tr>
+            <tr><td class="topic">Cause &amp; Effect</td><td class="tag">🟡</td><td class="notes">Moderate frequency.</td></tr>
+            <tr><td class="topic">Course of Action</td><td class="tag">🟡</td><td class="notes">Behavioural reasoning practice.</td></tr>
+            <tr><td class="topic">Logical Deductions / Syllogisms</td><td class="tag">✅</td><td class="notes">Core deduction patterns.</td></tr>
+            <tr><td class="topic">Theme Detection</td><td class="tag">❌</td><td class="notes">Low ROI for placements.</td></tr>
+            <tr><td class="topic">Passage &amp; Conclusions</td><td class="tag">✅</td><td class="notes">Inference-based questions — practice a lot.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 6 Non-Verbal Reasoning -->
+      <section class="card" id="nonverbal">
+        <h2>6. Non-Verbal Reasoning (Visual / Puzzle)</h2>
+        <table>
+          <thead><tr><th>Topic</th><th>Importance</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td class="topic">Figure Series</td><td class="tag">✅</td><td class="notes">Pattern spotting — practice various sequences.</td></tr>
+            <tr><td class="topic">Mirror &amp; Water Images</td><td class="tag">✅</td><td class="notes">Simple reflections & symmetry checks.</td></tr>
+            <tr><td class="topic">Paper Folding &amp; Cutting</td><td class="tag">🟡</td><td class="notes">Practice folding outcomes visually.</td></tr>
+            <tr><td class="topic">Embedded Figures</td><td class="tag">🟡</td><td class="notes">Look for small shapes inside complex figures.</td></tr>
+            <tr><td class="topic">Cubes &amp; Dice</td><td class="tag">✅</td><td class="notes">Rotation, opposite faces, net-based problems.</td></tr>
+            <tr><td class="topic">Figure Matrix</td><td class="tag">🟡</td><td class="notes">Pattern completion across rows/columns.</td></tr>
+            <tr><td class="topic">Pattern Completion</td><td class="tag">🟡</td><td class="notes">Moderate importance.</td></tr>
+            <tr><td class="topic">Grouping of Figures</td><td class="tag">❌</td><td class="notes">Low ROI.</td></tr>
+            <tr><td class="topic">Counting Figures (Triangles/Squares)</td><td class="tag">🟡</td><td class="notes">Useful occasionally.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Summary table -->
+      <section class="card must-focus" id="mustfocus">
+        <h2>Summary Table — Must-Focus Areas</h2>
+        <table>
+          <thead><tr><th>Section</th><th>Top 3 Must-Do Topics</th></tr></thead>
+          <tbody>
+            <tr><td>Arithmetic Aptitude</td><td>Percentages, Profit &amp; Loss, Time-Speed-Distance</td></tr>
+            <tr><td>Data Interpretation</td><td>Tables, Pie Charts, Mixed Graphs</td></tr>
+            <tr><td>Verbal Ability</td><td>Reading Comprehension, Cloze Test, Sentence Correction</td></tr>
+            <tr><td>Logical Reasoning</td><td>Puzzles, Seating, Coding-Decoding</td></tr>
+            <tr><td>Verbal Reasoning</td><td>Assumptions, Arguments, Conclusions</td></tr>
+            <tr><td>Non-Verbal Reasoning</td><td>Figure Series, Cubes/Dice, Mirror Images</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <footer>
+      <div>Tip: Edit this file in VS Code to add or remove topics. Use print preview to set A4 margins.</div>
+      <div class="print-hint">Printable A4 friendly • Colors indicate priority</div>
+    </footer>
+  </div>
+</body>
+</html>

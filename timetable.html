@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mohit — Daily Placement Prep Timetable</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#06b6d4; --muted:#555; --white:#222;
+    --row1:#fafafa; --row2:#f0faff;
+  }
+  *{box-sizing:border-box;font-family:Inter,system-ui,Arial}
+  body{margin:0;background:#fefefe;padding:20px;color:var(--white)}
+  .poster{max-width:900px;margin:auto;padding:28px;background:#fff;border:2px solid #ccc;border-radius:12px}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+  .avatar{width:80px;height:80px;background:linear-gradient(135deg,var(--accent),#7c3aed);border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:26px;color:#fff}
+  h1{margin:0;font-size:26px}
+  p.subtitle{margin:4px 0 0;color:var(--muted)}
+  .chip{background:#e9f9fc;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;border:1px solid #b4ebf3;color:#055}
+  .meta{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+  .card{background:#fafafa;padding:14px;border-radius:8px;border:1px solid #ddd}
+  .card h3{margin:0;font-size:16px;border-bottom:1px solid #ddd;padding-bottom:4px}
+  .time-row{display:flex;gap:10px;align-items:flex-start;padding:6px;border-bottom:1px dashed #ddd}
+  .time{min-width:95px;font-weight:700;color:var(--accent);font-size:14px}
+  .activity{flex:1;font-size:14px;color:#000}
+  .time-row:nth-child(odd){background:var(--row1);}
+  .time-row:nth-child(even){background:var(--row2);}
+  .footer{margin-top:20px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+  .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;font-weight:600;border:none;cursor:pointer}
+  table{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}
+  th,td{border:1px solid #ccc;padding:8px;text-align:center}
+  th{background:#e9f9fc;color:#055}
+  @media print{
+    body{padding:0}
+    .poster{border:none;border-radius:0;box-shadow:none;max-width:100%;page-break-after:auto}
+    .btn,.footer{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <header>
+    <div class="avatar">MJ</div>
+    <div>
+      <h1>Mohit Joshi — Daily Placement Prep</h1>
+      <p class="subtitle">DSA • Reasoning • Interview Prep • Projects • Communication</p>
+      <div class="meta">
+        <div class="chip">Wake up: 4:30 AM</div>
+        <div class="chip">Sleep: 10:30 PM</div>
+        <div class="chip">High-focus timetable</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Morning Power Block</h3>
+      <div class="time-row"><div class="time">4:30 - 5:00 AM</div><div class="activity">Wake up • Hydrate • Light stretching</div></div>
+      <div class="time-row"><div class="time">5:00 - 5:30 AM</div><div class="activity">Morning exercise / yoga</div></div>
+      <div class="time-row"><div class="time">5:30 - 6:30 AM</div><div class="activity">DSA warm-up — Easy → Medium problems</div></div>
+      <div class="time-row"><div class="time">6:30 - 7:30 AM</div><div class="activity">DSA Deep Dive — Concepts + 1 Medium/Hard question</div></div>
+      <div class="time-row"><div class="time">7:30 - 8:00 AM</div><div class="activity">Breakfast</div></div>
+    </div>
+
+    <div class="card">
+      <h3>Midday Focus</h3>
+      <div class="time-row"><div class="time">8:00 - 9:00 AM</div><div class="activity">Reasoning & Aptitude (Quant + Logical Puzzles)</div></div>
+      <div class="time-row"><div class="time">9:00 - 9:45 AM</div><div class="activity">Communication — Pronunciation, Vocabulary, 1-min Talks</div></div>
+      <div class="time-row"><div class="time">10:15 AM - 12:00 PM</div><div class="activity">Interview Prep — OOPs, DBMS, OS, System Design</div></div>
+      <div class="time-row"><div class="time">12:00 - 1:00 PM</div><div class="activity">Project Learning — React / Node / Data Analytics</div></div>
+    </div>
+
+    <div class="card">
+      <h3>Afternoon Sessions</h3>
+      <div class="time-row"><div class="time">1:00 - 1:30 PM</div><div class="activity">Lunch + Short walk</div></div>
+      <div class="time-row"><div class="time">1:30 - 2:00 PM</div><div class="activity">Power nap (20-30 mins)</div></div>
+      <div class="time-row"><div class="time">2:00 - 3:30 PM</div><div class="activity">Project Implementation — Coding, debugging</div></div>
+      <div class="time-row"><div class="time">3:30 - 4:30 PM</div><div class="activity">DSA topic practice (rotation)</div></div>
+    </div>
+
+    <div class="card">
+      <h3>Evening & Night</h3>
+      <div class="time-row"><div class="time">4:30 - 5:00 PM</div><div class="activity">Break / Snack</div></div>
+      <div class="time-row"><div class="time">5:00 - 6:00 PM</div><div class="activity">Mock Test / Contest practice</div></div>
+      <div class="time-row"><div class="time">6:00 - 7:00 PM</div><div class="activity">Communication — GD, Mock Interviews</div></div>
+      <div class="time-row"><div class="time">7:00 - 7:30 PM</div><div class="activity">Dinner</div></div>
+      <div class="time-row"><div class="time">7:30 - 8:30 PM</div><div class="activity">Project work / Resume updates</div></div>
+      <div class="time-row"><div class="time">8:30 - 9:00 PM</div><div class="activity">Revise notes & flashcards</div></div>
+      <div class="time-row"><div class="time">9:00 - 9:30 PM</div><div class="activity">Day review & planning</div></div>
+      <div class="time-row"><div class="time">10:30 PM</div><div class="activity">Sleep</div></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px;">Weekly DSA Rotation</h3>
+  <table>
+    <tr>
+      <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+    </tr>
+    <tr>
+      <td>Arrays</td><td>Strings</td><td>Linked Lists</td><td>Trees</td><td>Graphs</td><td>Dynamic Programming</td><td>Mixed / Contest</td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <div>To edit, open this file in VS Code and change the time/activity text.</div>
+    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</div>
+</body>
+</html>
